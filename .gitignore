@@ -1,0 +1,13 @@
+**/__pycache__
+
+# media files
+media
+
+# environments
+venv/
+
+#Visual studio code settings
+.vscode
+
+#Data base
+db.sqlite3
