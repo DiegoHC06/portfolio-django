@@ -1,3 +1,6 @@
+{% extends 'layour.html'%}
+
+{%block content%}
 <h1 style="padding-left:50%;"> Homee</h1>
 
 {% for project in projects %}
@@ -12,3 +15,5 @@
   Project</a>
 {% endif %} 
 {%endfor%}
+
+{%endblock%}
