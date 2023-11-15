@@ -4,6 +4,9 @@
 {% for post in posts %}
     <h2>{{post.title}}</h2> 
     <!-- para dejar pocos caracteres en la vista -->
-    <p>{{post.description|truncatechars:100}}</p>
+    <p>{{post.description|striptags|truncatechars:100 }}</p>
+    <p>{{post.date|date:"D d M Y" |upper}}</p>
     <img src="{{post.image.url}}" alt="{{post.title}}">
+
+    <a href="{% url 'blog:post_detail' post.id%}"> {{post.title}}</a>
 {% endfor %}
