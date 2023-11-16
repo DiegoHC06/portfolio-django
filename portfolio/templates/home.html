@@ -1,7 +1,10 @@
 {% extends 'layour.html'%}
 
 {%block content%}
-<h1  > Homee</h1>
+
+{% load static %}
+
+<img src="{% static 'portfolio/avatar.jpg' % }" alt="" >
 
 {% for project in projects %}
 
