@@ -121,7 +121,7 @@ STATIC_URL = 'static/'
 
 MEDIA_ROOT = BASE_DIR / 'media' #concentrar todas las imagens en una carpeta media.
 
-MEDIA_URL = '/media/' #hacer publica la carpeta
+MEDIA_URL = '/public/' #hacer publica la carpeta
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
